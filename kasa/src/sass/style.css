@@ -1,0 +1,184 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+button {
+  all: initial;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Monstserrat";
+  src: url(../assets/fonts/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+body {
+  font-family: "Monstserrat", sans-serif;
+  max-width: 1240px;
+  margin: auto;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  max-width: 1240px;
+  max-height: 225px;
+  margin-top: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.banner img {
+  width: 1240px;
+  max-height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.banner .bannerFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.35);
+}
+.banner p {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  color: white;
+  padding: 20px 250px;
+  font-size: 48px;
+  z-index: 2;
+}
+
+.card-division {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 50px;
+  padding: 45px;
+  margin-top: 45px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
+.location-card {
+  position: relative;
+  max-width: 340px;
+  max-height: 340px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.location-card img {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.location-card .cardFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 50%);
+}
+.location-card p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  font-size: 18px;
+  padding: 20px 25px;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF6060;
+  margin-left: 60px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #FF6060;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1240px;
+  height: 210px;
+  background: #000;
+}
+footer img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 24px;
+  color: white;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #FF6060;
+}/*# sourceMappingURL=style.css.map */

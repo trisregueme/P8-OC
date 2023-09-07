@@ -2,10 +2,13 @@ import reportWebVitals from "./reportWebVitals"
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import "./sass/style.css"
 import Home from "./pages/Home"
 import Error from "./pages/Error"
 import Aboutus from "./pages/Aboutus"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Location from "./pages/Location"
  
 ReactDOM.render(
     <React.StrictMode>
@@ -15,7 +18,10 @@ ReactDOM.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/apropos" element={<Aboutus />} />
                 <Route path="*" element={<Error />} />
+                <Route path="/location" element={<Location />} />
+                <Route path="/location/:cardId" element={<Location />} />
             </Routes>
+            <Footer />
         </Router>
     </React.StrictMode>,
 document.getElementById('root')

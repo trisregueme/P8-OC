@@ -1,0 +1,11 @@
+{
+  "name": "oc_projet_4",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "prefix": "postcss ./SASS/style.css --use autoprefixer -d ./SASS/prefixed_css"
+  },
+  "author": "trisregueme",
+  "license": "ISC"
+}

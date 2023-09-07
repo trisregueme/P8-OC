@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: 500;
+    color: $primary_color;
+    margin-left : 60px;
+    &:hover {
+        text-decoration: underline;
+        color: $primary_color;
+    }
+}

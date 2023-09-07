@@ -1,6 +1,13 @@
+import Banner from "../../components/Banner"
+import LocationCard from "../../components/LocationCard"
 
 function Home() {
-    return <h1>Bienvenue sur la page d'accueil Kasa</h1>
+    return (
+        <div>
+            <Banner />
+            <LocationCard />
+        </div>
+    )
 }
 
 export default Home

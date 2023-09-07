@@ -1,0 +1,32 @@
+.banner {
+    position: relative;
+    max-width: 1240px;
+    max-height: 225px;
+    margin-top: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    img {
+    width: 1240px;
+    max-height: 225px;
+    object-fit: cover;
+    border-radius: 25px;
+    }
+    .bannerFilter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.35);
+    }
+    p {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        color: white;
+        padding: 20px 250px;
+        font-size: 48px;
+        z-index: 2;
+    }
+}
