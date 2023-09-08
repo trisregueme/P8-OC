@@ -97,6 +97,35 @@ body {
   z-index: 2;
 }
 
+.carrousel {
+  position: relative;
+  margin-top: 50px;
+}
+.carrousel .carrousel-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1240px;
+  max-height: 415px;
+}
+.carrousel .left-arrow {
+  position: absolute;
+  top: 38%;
+  left: 25px;
+}
+.carrousel .right-arrow {
+  position: absolute;
+  top: 38%;
+  right: 25px;
+}
+.carrousel .image-counter {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .card-division {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -142,6 +171,26 @@ body {
   z-index: 2;
 }
 
+.host-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+}
+.host-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.host-card .host-name {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -181,4 +230,26 @@ footer p {
 
 h1 {
   color: #FF6060;
+}
+
+.location-panel {
+  color: #FF6060;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-header {
+  position: relative;
+  display: flex;
+}
+.location-header h1 {
+  font-size: 36px;
+}
+.location-header p {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

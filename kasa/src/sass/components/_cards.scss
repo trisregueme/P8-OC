@@ -41,3 +41,23 @@
         z-index: 2;
     }
 }
+
+.host-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    .host-name {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

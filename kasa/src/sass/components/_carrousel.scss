@@ -1,0 +1,27 @@
+.carrousel {
+    position: relative;
+    margin-top: 50px;
+    .carrousel-image {
+        object-fit: cover;
+        width: 1240px;
+        max-height: 415px;
+    }
+    .left-arrow {
+        position: absolute;
+        top: 38%;
+        left: 25px;
+    }
+    .right-arrow {
+        position: absolute;
+        top: 38%;
+        right: 25px;
+    }
+    .image-counter {
+        position: absolute;
+        color: white;
+        font-size: 18px;
+        top:90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

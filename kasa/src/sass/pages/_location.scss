@@ -1,0 +1,21 @@
+.location-panel {
+    color: $primary_color;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-informations {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-header {
+    position: relative;
+    display: flex;
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
