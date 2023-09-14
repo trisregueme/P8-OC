@@ -58,7 +58,7 @@ a {
 }
 body {
   font-family: "Monstserrat", sans-serif;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: auto;
   width: 100%;
 }
@@ -67,7 +67,7 @@ body {
   position: relative;
   max-width: 1240px;
   max-height: 225px;
-  margin-top: 50px;
+  margin: 50px auto;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -97,6 +97,38 @@ body {
   z-index: 2;
 }
 
+.collapse-element {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 50px;
+}
+
+.collapse-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+
+.collapse-Equipements {
+  font-size: 18px;
+  padding: 25px 15px 40px;
+  line-height: 30px;
+  list-style-type: none;
+}
+.collapse-Description {
+  font-size: 18px;
+  padding: 25px 15px 40px;
+  line-height: 30px;
+}
+
 .carrousel {
   position: relative;
   margin-top: 50px;
@@ -106,6 +138,7 @@ body {
      object-fit: cover;
   width: 1240px;
   max-height: 415px;
+  border-radius: 25px;
 }
 .carrousel .left-arrow {
   position: absolute;
@@ -128,11 +161,12 @@ body {
 
 .card-division {
   display: grid;
+  max-width: 1240px;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 60px;
   grid-row-gap: 50px;
   padding: 45px;
-  margin-top: 45px;
+  margin: 45px auto;
   background-color: #F6F6F6;
   border-radius: 25px;
 }
@@ -188,14 +222,25 @@ body {
   align-items: flex-end;
   flex-wrap: wrap;
   flex-direction: column;
+  max-width: -moz-min-content;
+  max-width: min-content;
   gap: 5px;
+}
+
+.tags-card {
+  color: white;
+  font-size: 14px;
+  padding: 3px 25px 2px;
+  background: #FF6060;
+  border-radius: 50px;
 }
 
 header {
   display: flex;
+  max-width: 1240px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 45px;
+  margin: 45px auto 0px;
 }
 
 nav a {
@@ -214,7 +259,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1240px;
+  margin: auto;
+  max-width: 1440px;
   height: 210px;
   background: #000;
 }
@@ -233,6 +279,8 @@ h1 {
 }
 
 .location-panel {
+  max-width: 1240px;
+  margin: auto;
   color: #FF6060;
   display: flex;
   flex-direction: column;
@@ -246,10 +294,34 @@ h1 {
 .location-header {
   position: relative;
   display: flex;
+  margin: 30px 0 20px;
 }
 .location-header h1 {
   font-size: 36px;
+  margin-bottom: 5px;
 }
 .location-header p {
   font-size: 18px;
+}
+
+.location-caracteristics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.location-details {
+  display: flex;
+  gap: 75px;
+}
+
+.tags-list {
+  display: flex;
+  gap: 10px;
+}
+
+.ratings {
+  display: flex;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

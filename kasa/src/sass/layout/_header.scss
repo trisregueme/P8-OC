@@ -1,8 +1,9 @@
 header {
     display: flex;
+    max-width: 1240px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
+    margin: 45px auto 0px;
 }
 
 nav a {

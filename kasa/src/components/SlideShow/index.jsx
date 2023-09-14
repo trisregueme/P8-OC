@@ -2,7 +2,7 @@ import { useState } from "react"
 import leftarrow from "../../assets/carousel/arrow_left.png"
 import rightarrow from "../../assets/carousel/arrow_right.png"
 
-function Carousel({pictures , title}) {
+function SlideShow({pictures , title}) {
     const [imageCounter, setImageCounter] = useState(1)
     if (imageCounter > pictures.length) {
         setImageCounter(1)
@@ -27,4 +27,4 @@ function Carousel({pictures , title}) {
         </div>
     )
 }
-export default Carousel
+export default SlideShow

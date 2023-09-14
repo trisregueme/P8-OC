@@ -1,10 +1,11 @@
 .card-division {
     display: grid;
+    max-width: 1240px;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 60px ;
     grid-row-gap: 50px ;
     padding: 45px;
-    margin-top: 45px;
+    margin: 45px auto;
     background-color: $background-color;
     border-radius: 25px;
 }
@@ -58,6 +59,15 @@
         align-items: flex-end;
         flex-wrap: wrap;
         flex-direction: column;
+        max-width: min-content;
         gap: 5px;
     }
+}
+
+.tags-card {
+    color: white;
+    font-size: 14px;
+    padding: 3px 25px 2px;
+    background: $primary_color;
+    border-radius: 50px;
 }

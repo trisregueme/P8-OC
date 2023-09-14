@@ -1,7 +1,6 @@
 function HostInfos( {infos} ) {
-    console.log(infos)
     const hostname = infos.name.split(" ")
-    console.log(hostname)
+
     return (
         <div className="host-card">
             <div className="host-name">
