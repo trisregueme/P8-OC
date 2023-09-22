@@ -1,34 +1,26 @@
-import { useState } from "react"
-import chevron from "../../assets/chevron.svg"
+import datas from "../../datas/data.json"
+import Card from "../Card"
+import { Link } from "react-router-dom"
 
-function Collapse( {collapseTitle, collapseText} ) {
-    console.log(collapseTitle)
-    console.log(collapseText)
-
-    let [collapseState, changeCollapseState] = useState("notshowing")
-    console.log(collapseState)
-
-    function changeState() {
-        if (collapseState === "showing") {
-            changeCollapseState("notshowing")
-        } else {
-            changeCollapseState("showing")
-        }
-        console.log(collapseState)
-    }  
+function LocationCard() {
     return (
-        <div className={`collapse-element : collapse-${collapseState}`}>
-            <div className="collapse-bar">
-                <p>{collapseTitle}</p>
-                <img src={chevron} alt="chevron" onClick={() => changeState()}></img>
-            </div>
-            <p 
-                className={`collapse-${collapseTitle}`}
-            >
-                {collapseText}
-            </p>
+        <div className="card-division">
+            {datas.map((location) => (
+                <div key={(location.id)+(location.title)}>
+                    <Link to={`/location/${location.id}`}>                        
+                        <Card
+                            key={location.id}
+                            title={location.title}
+                            cover={location.cover}
+                            id={location.id}
+                        />
+                    </Link>
+                </div>
+                )
+            )}
         </div>
+
     )
 }
 
-export default Collapse
+export default LocationCard
