@@ -11,12 +11,14 @@
     object-fit: cover;
     border-radius: 25px;
     }
-    .bannerFilter {
+    .banner-filter {
         position: absolute;
-        top: 0;
+        top: -1px;
         left: 0;
-        height: 100%;
-        width: 100%;
+        width: 1240px;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 25px;
         z-index: 1;
         background: rgba(0, 0, 0, 0.35);
     }

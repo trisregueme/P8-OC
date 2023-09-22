@@ -78,12 +78,15 @@ body {
      object-fit: cover;
   border-radius: 25px;
 }
-.banner .bannerFilter {
+.banner .banner-filter {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
-  height: 100%;
-  width: 100%;
+  width: 1240px;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
   z-index: 1;
   background: rgba(0, 0, 0, 0.35);
 }
@@ -99,36 +102,48 @@ body {
   z-index: 2;
 }
 
-.collapse-element {
-  width: 50%;
+.collapse {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 10px 10px 20px 20px;
+}
+.collapse-location {
+  width: 50%;
   margin-bottom: 50px;
 }
+.collapse-apropos {
+  width: 75%;
+  margin-bottom: 25px;
+}
 
-.collapse-bar {
+.collapse-text {
+  font-size: 18px;
+  line-height: 30px;
+  list-style-type: none;
+}
+.collapse-text-location {
+  padding: 25px 15px 40px;
+}
+.collapse-text-apropos {
+  padding: 20px 15px 20px;
+  color: #FF6060;
+}
+
+.collapse-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  font-size: 18px;
   padding: 10px 15px;
   background-color: #FF6060;
   border-radius: 10px;
 }
-
-.collapse-Equipements {
+.collapse-title-location {
   font-size: 18px;
-  padding: 25px 15px 40px;
-  line-height: 30px;
-  list-style-type: none;
 }
-.collapse-Description {
-  font-size: 18px;
-  padding: 25px 15px 40px;
-  line-height: 30px;
+.collapse-title-apropos {
+  font-size: 24px;
 }
 
 .collapse-notshowing {
@@ -280,6 +295,34 @@ footer p {
   font-size: 24px;
   color: white;
   margin-top: 20px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+  color: #FF6060;
+  margin: 130px 0;
+}
+.error h1 {
+  font-size: 290px;
+  font-weight: 700;
+  line-height: 300px;
+}
+.error p {
+  font-size: 36px;
+}
+.error a {
+  color: #FF6060;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {

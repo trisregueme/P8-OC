@@ -1,34 +1,44 @@
-.collapse-element {
-    width: 50%;
+.collapse {
     display: flex;
     flex-direction: column;
     background-color: $background-color;
     border-radius: 10px 10px 20px 20px;
-    margin-bottom: 50px;  
+    &-location {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    &-apropos {
+        width: 75%;
+        margin-bottom: 25px;
+    }
 }
 
-.collapse-bar {
+.collapse-text {
+        font-size: 18px;
+        line-height: 30px;
+        list-style-type: none;
+    &-location {
+        padding: 25px 15px 40px;
+}
+    &-apropos {
+        padding: 20px 15px 20px;
+        color: $primary_color;
+    }
+}
+
+.collapse-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-size: 18px;
     padding: 10px 15px;
     background-color: $primary_color;
     border-radius: 10px;
-}
-
-.collapse {
-    &-Equipements {
+    &-location{
         font-size: 18px;
-        padding: 25px 15px 40px;
-        line-height: 30px;
-        list-style-type: none;
     }
-    &-Description {
-        font-size: 18px;
-        padding: 25px 15px 40px;
-        line-height: 30px;
+    &-apropos{
+        font-size: 24px;
     }
 }
 

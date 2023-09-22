@@ -1,30 +1,36 @@
 import { useState } from "react"
+import { useLocation } from "react-router-dom"
 import chevron from "../../assets/chevron.svg"
 
 function Collapse( {collapseTitle, collapseText} ) {
-    console.log(collapseTitle)
-    console.log(collapseText)
-
+// Permet la différentiation de style entre les collaspes des cards-location et de la page à propos
+    const location = useLocation()
+    let collapsePage = ""
+    if (location.pathname==="/apropos") {
+        collapsePage = "apropos"
+    } else {
+        collapsePage = "location"
+    }
+// Fonction permettant l'ouverture et la fermeture au clic des collapses
     let [collapseState, changeCollapseState] = useState("notshowing")
-    console.log(collapseState)
-
     function changeState() {
         if (collapseState === "showing") {
             changeCollapseState("notshowing")
         } else {
             changeCollapseState("showing")
         }
-        console.log(collapseState)
     }  
+    
     return (
-        <div className={`collapse-element : collapse-${collapseState}`}>
-            <div className="collapse-bar">
+        <div className={
+            `collapse collapse-${collapsePage} collapse-${collapseState}`
+            }
+        >
+            <div className={`collapse-title collapse-title-${collapsePage}`}>
                 <p>{collapseTitle}</p>
                 <img src={chevron} alt="chevron" onClick={() => changeState()}></img>
             </div>
-            <p 
-                className={`collapse-${collapseTitle}`}
-            >
+            <p className={`collapse-text collapse-text-${collapsePage}`}>
                 {collapseText}
             </p>
         </div>
