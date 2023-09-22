@@ -89,8 +89,10 @@ body {
 }
 .banner p {
   position: absolute;
-  top: 30%;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
   color: white;
   padding: 20px 250px;
   font-size: 48px;
@@ -102,7 +104,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
-  border-radius: 0 0 20px 20px;
+  border-radius: 10px 10px 20px 20px;
   margin-bottom: 50px;
 }
 
@@ -127,6 +129,12 @@ body {
   font-size: 18px;
   padding: 25px 15px 40px;
   line-height: 30px;
+}
+
+.collapse-notshowing {
+  height: 54px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .carrousel {
