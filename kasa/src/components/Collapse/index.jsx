@@ -22,15 +22,12 @@ function Collapse( {collapseTitle, collapseText} ) {
     }  
     
     return (
-        <div className={
-            `collapse collapse-${collapsePage} collapse-${collapseState}`
-            }
-        >
+        <div className={`collapse collapse-${collapsePage} collapse-${collapseState}`}>
             <div className={`collapse-title collapse-title-${collapsePage}`}>
                 <p>{collapseTitle}</p>
-                <img src={chevron} alt="chevron" onClick={() => changeState()}></img>
+                <img src={chevron} alt="chevron" onClick={() => changeState()} className={`collapse-chevron-${collapseState}`}></img>
             </div>
-            <p className={`collapse-text collapse-text-${collapsePage}`}>
+            <p className={`collapse-text collapse-text-${collapsePage} collapse-text-${collapseState}`}>
                 {collapseText}
             </p>
         </div>

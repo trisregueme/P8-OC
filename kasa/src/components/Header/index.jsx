@@ -1,13 +1,23 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from "../../assets/logo.svg"
 
 function Header() {
+  /*
+  const location = useLocation()
+  console.log(location)
+  if (location.pathname==="/apropos") {
+    navElement = "apropos"
+  } else {
+    navElement = "accueil"
+  }
+  */
+
   return (
     <header>
-      <Link to="/"><img src={logo} alt="logo Kasa"></img></Link>
+      <NavLink to="/"><img src={logo} alt="logo Kasa"></img></NavLink>
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/apropos">A Propos</Link>
+        <NavLink className={({isActive}) => (isActive ? "active-link" : "none")} to="/"> Accueil</NavLink>
+        <NavLink className={({isActive}) => (isActive ? "active-link" : "none")} to="/apropos">A Propos</NavLink>
       </nav>
     </header>
   )

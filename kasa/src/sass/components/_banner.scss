@@ -11,7 +11,7 @@
     object-fit: cover;
     border-radius: 25px;
     }
-    .banner-filter {
+    &-filter {
         position: absolute;
         top: -1px;
         left: 0;
@@ -32,5 +32,11 @@
         padding: 20px 250px;
         font-size: 48px;
         z-index: 2;
+    }
+}
+
+@include desktop {
+    .banner {
+        font-size: 12px;
     }
 }

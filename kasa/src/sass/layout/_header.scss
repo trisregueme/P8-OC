@@ -14,5 +14,10 @@ nav a {
     &:hover {
         text-decoration: underline;
         color: $primary_color;
-    }
+    }   
+}
+
+.active-link{
+    text-decoration: underline;
+    color: $primary_color;
 }
