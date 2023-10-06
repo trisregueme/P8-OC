@@ -1,4 +1,4 @@
-@mixin desktop {
+@mixin mobile {
     @media screen and (max-width: 769px) {
         @content
     }

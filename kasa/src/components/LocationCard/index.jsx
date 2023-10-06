@@ -6,7 +6,7 @@ function LocationCard() {
     return (
         <div className="card-division">
             {datas.map((location) => (
-                <div key={(location.id)+(location.title)}>
+                <div className="card-division-item" key={(location.id)+(location.title)}>
                     <Link to={`/location/${location.id}`}>                        
                         <Card
                             key={location.id}

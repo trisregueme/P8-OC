@@ -4,17 +4,35 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 45px auto 0px;
+    @include mobile {
+        margin: 20px auto 0px;
+        > a {
+            max-width: 145px;
+            height: auto;
+        }
+    }
 }
 
-nav a {
-    font-size: 24px;
-    font-weight: 500;
-    color: $primary_color;
-    margin-left : 60px;
-    &:hover {
-        text-decoration: underline;
+nav {
+    a {
+        font-size: 24px;
+        font-weight: 500;
         color: $primary_color;
-    }   
+        margin-left : 60px;
+        &:hover {
+            text-decoration: underline;
+            color: $primary_color;
+        }
+    }
+    @include mobile {
+        display: flex;
+        align-items: center;
+        a {
+            font-size: 12px;
+            margin-left: 26px;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .active-link{

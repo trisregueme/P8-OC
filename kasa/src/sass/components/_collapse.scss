@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: $background-color;
     border-radius: 10px 10px 20px 20px;
+    max-height: 54px;
     &-location {
         width: 50%;
         margin-bottom: 50px;
@@ -12,14 +13,26 @@
         margin-bottom: 25px;
     }
     &-notshowing {
-        max-height: 54px;
         overflow: hidden;
         border-radius: 0 0 10px 10px;
         transition: max-height 1s cubic-bezier(0, 1, 0, 1);
     }
     &-showing {
-        max-height: 1000px;
+        max-height: 1000px !important;
         transition: max-height 1s ease-in-out;
+    }
+    @include mobile {
+        &-location {
+            width: 100%;
+            max-height: 30px;
+        }
+        &-apropos {
+            width: 100%;
+            max-height: 30px;
+        }
+        &-notshowing {
+            border-radius: 0 0 5px 5px;
+        }
     }
 }
 
@@ -38,13 +51,29 @@
     &-apropos{
         font-size: 24px;
     }
+    @include mobile {
+        padding: 5px 10px;
+        border-radius: 5px;
+        &-location {
+            font-size: 14px;
+            > img {
+                width: 20px;
+            }
+        }
+        &-apropos {
+            font-size: 14px;
+            > img {
+                width: 20px;
+            }
+        }
+    }
 }
 
 .collapse-text {
-        font-size: 18px;
-        line-height: 30px;
-        list-style-type: none;
-        z-index: 1;
+    font-size: 18px;
+    line-height: 30px;
+    list-style-type: none;
+    z-index: 1;
     &-location {
         padding: 25px 15px 40px;
     }
@@ -57,6 +86,18 @@
     }
     &-showing {
         animation: slideDown ease .5s both .2s;
+    }
+    @include mobile {
+        font-size: 12px;
+        line-height: 20px;
+        &-location {
+            padding: 10px 15px 15px;
+            overflow: hidden;
+        }
+        &-apropos {
+            padding: 10px 15px 15px;
+            overflow: hidden;
+        }
     }
 }
 

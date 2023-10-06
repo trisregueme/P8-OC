@@ -12,10 +12,25 @@
     }
     p {
         font-size: 36px;
+        text-align: center;
     }
     a {
         color: $primary_color;
         text-decoration: underline;
         font-size: 20px;
+    }
+    @include mobile {
+        gap: 50px;
+        h1 {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        p {
+            font-size: 18px;
+            margin: 0 50px;
+        }
+        a {
+            font-size: 14px;
+        }
     }
 }

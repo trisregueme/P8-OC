@@ -3,10 +3,10 @@ import LocationCard from "../../components/LocationCard"
 
 function Home() {
     return (
-        <div>
+        <main>
             <Banner />
             <LocationCard />
-        </div>
+        </main>
     )
 }
 

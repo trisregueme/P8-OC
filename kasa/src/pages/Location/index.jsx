@@ -26,21 +26,21 @@ function Location() {
                 pictures={locationInfos.pictures}
                 title={locationInfos.title}
             />
-            <section className="location-informations">
-                <div className="location-header">
-                    <div>
+            <section>
+                <div className="location-informations">
+                    <div className="location-header">
                         <h1>{locationInfos.title}</h1>
                         <p>{locationInfos.location}</p>
                     </div>
                     <HostInfos 
                         infos={locationInfos.host}
                     />
-                </div>
-                <div className="location-caracteristics">
                     <DisplayTags
+                        className="location-tags"
                         tags={locationInfos.tags}
                     />
                     <Rating
+                        className="location-ratings"
                         rating={locationInfos.rating}
                     />
                 </div>
