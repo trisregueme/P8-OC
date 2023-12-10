@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Welcome to the "Kasa - Location Agency" project, made with React & SASS.
+This is my first project using React, initialized with Create-React-App, and combined it with SASS for the style.
+
+For this project i had to discover and get used to React to create a web application for a location agency offering a large choice of housing. I also used React-Router to navigate through the web-app.
+
+-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
